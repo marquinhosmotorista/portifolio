@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Marcos Paulo | Portfólio</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="antialiased bg-slate-950 text-slate-200">
+
+  <header class="fixed w-full z-50 bg-slate-950/80 backdrop-blur-md border-b border-slate-800">
+    <div class="max-w-6xl mx-auto px-6 py-3 flex items-center justify-between">
+      <a href="#" class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-full overflow-hidden border-2 border-emerald-500">
+          <img src="perfil.jpeg" alt="foto de perfil" class="w-full h-full object-cover">
+        </div>
+        <div>
+          <div class="text-sm font-semibold text-white">Marcos Paulo</div>
+          <div class="text-xs text-emerald-500 font-medium">Desenvolvedor  em formação</div>
+        </div>
+      </a>
+
+      <nav class="hidden md:flex items-center gap-6 text-sm font-medium">
+        <a href="#sobre" class="hover:text-emerald-400 transition-colors">Sobre</a>
+        <a href="#projetos" class="hover:text-emerald-400 transition-colors">Projetos</a>
+        <a href="#contato" class="hover:text-emerald-400 transition-colors">Contato</a>
+      </nav>
+
+      <div class="md:hidden">
+        <button id="btnMenu" class="p-2 rounded-md hover:bg-slate-800 focus:outline-none">
+          <svg id="iconMenu" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+            stroke="currentColor">
+            <path id="menuPath" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <div id="mobileMenu" class="hidden md:hidden bg-slate-900 border-b border-slate-800">
+      <nav class="flex flex-col p-6 gap-4 text-center font-medium">
+        <a href="#sobre" class="hover:text-emerald-400 py-2 mobile-link">Sobre</a>
+        <a href="#projetos" class="hover:text-emerald-400 py-2 mobile-link">Projetos</a>
+        <a href="#contato" class="hover:text-emerald-400 py-2 mobile-link">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="pt-28">
+    <section class="max-w-6xl mx-auto px-6 py-16 grid md:grid-cols-2 gap-10 items-center">
+      <div class="space-y-6">
+        <p class="text-sm text-emerald-500 font-bold tracking-widest uppercase">Olá — Bem-vindo</p>
+        <h1 class="text-4xl md:text-6xl font-extrabold text-white">Eu sou Marcos Paulo<span
+            class="text-emerald-500">.</span></h1>
+        <p class="text-lg text-slate-400 max-w-xl">
+          Estudante de Sistemas para Internet com <strong>16 anos de experiência</strong> em responsabilidade e
+          compromisso no setor público.
+        </p>
+        <div class="flex gap-4">
+          <a href="#projetos"
+            class="px-6 py-3 rounded-lg bg-emerald-600 text-white font-bold hover:bg-emerald-500 transition-all">Ver
+            Projetos</a>
+          <a href="#contato"
+            class="px-6 py-3 rounded-lg border border-slate-700 text-slate-300 font-bold hover:bg-slate-800 transition-all">Contato</a>
+        </div>
+      </div>
+      <div class="flex justify-center">
+        <div class="w-72 h-72 relative rounded-2xl overflow-hidden border border-slate-700 shadow-2xl">
+          <img src="perfil.jpeg" alt="foto" class="w-full h-full object-cover">
+        </div>
+      </div>
+    </section>
+
+    <section id="sobre" class="max-w-4xl mx-auto px-6 py-14">
+      <div class="bg-slate-900/50 border border-slate-800 rounded-3xl p-8 md:p-12 fade-up">
+        <h2 class="text-3xl font-bold text-white mb-6">Sobre mim</h2>
+        <p class="text-slate-400 leading-relaxed">
+          Me chamo Marcos Paulo de Carvalho, nascido 17 de novembro de 1974, moro em Barro Duro-Piauí, tenho 51 anos de
+          idade, sou uma pessoa dedicado ao trabalho e a família. Sou servidor público da Prefeitura Municipal de Barro
+          Duro-PI, trabalho como motorista da secretaria municipal de saúde deste município há mais de 16 anos, onde
+          desenvolvo meu trabalho com responsabilidade e compromisso com a saúde pública e meus colegas de trabalho. No
+          momento estou em formação acadêmica no curso de Tecnologia em Sistemas para Internet pela UESPI, buscando
+          expandir meus conhecimentos para alcançar novas oportunidades e ingressar na área tecnológica. No âmbito
+          pessoal, aprecio momentos de convivência com amigos e familiares, tenho sonho de conquistar estabilidade
+          profissional na área em que estou me formando e realizando grandes conquistas pessoais e profissionais.
+        </p>
+      </div>
+    </section>
+
+    <section id="projetos" class="max-w-6xl mx-auto px-6 py-14">
+      <h2 class="text-3xl font-bold text-white mb-8">Projetos</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <article class="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden proj-card">
+          <div class="h-48 bg-slate-800">
+            <img src="projet.jpeg" alt="Projeto" class="w-full h-full object-cover opacity-80">
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-white">Projeto em Teste</h3>
+            <p class="mt-2 text-slate-400 text-sm">Desenvolvimento  em andamento.</p>
+            <a href="#" class="inline-block mt-4 text-emerald-500 text-sm font-bold">Ver código </a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="contato" class="max-w-3xl mx-auto px-6 py-14">
+      <div class="bg-emerald-600 rounded-3xl p-8 text-white fade-up">
+        <h2 class="text-3xl font-bold mb-4">Enviar mensagem</h2>
+        <p class="mb-8 text-emerald-100">Entre em contato via WhatsApp ou e-mail: <span
+            class="font-bold">mpkarvalho1711@gmail.com</span></p>
+
+        <form id="contactForm" class="grid gap-4">
+          <input id="userName" name="name" required placeholder="Seu nome"
+            class="p-4 bg-white/10 border border-white/20 rounded-xl placeholder:text-emerald-100 focus:outline-none" />
+          <textarea id="userMsg" name="message" rows="4" required placeholder="Sua mensagem"
+            class="p-4 bg-white/10 border border-white/20 rounded-xl placeholder:text-emerald-100 focus:outline-none"></textarea>
+          <button type="submit"
+            class="py-4 rounded-xl bg-white text-emerald-600 font-bold hover:bg-slate-100 transition-all shadow-lg">
+            Enviar para o WhatsApp
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <footer class="py-12 border-t border-slate-900 text-center text-slate-500 text-sm">
+      © <span id="currentYear"></span> | Marcos Paulo de Carvalho <br>
+      <span class="text-xs">mpkarvalho1711@gmail.com </span>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
