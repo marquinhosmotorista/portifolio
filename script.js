@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
             e.preventDefault();
             
             // SUBSTITUA PELO SEU NÚMERO (DDI + DDD + NÚMERO)
-            const meuNumero = "5586900000000"; 
+            const meuNumero = "558699781545"; 
             
             const nome = document.getElementById('userName').value;
             const mensagem = document.getElementById('userMsg').value;
